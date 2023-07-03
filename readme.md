@@ -31,7 +31,7 @@ Earliest deadline first scheduing  assigns priorities dynamically  according to 
 
 Unlike rate-monotonic scheduling, EDF scheduling does not require that processes be periodic, nor must a process  require a constant amount of CPU time per burst. The only requirement  is that a process  announce its deadline to the scheduler whenever it becomes runnable. The appeal of EDF schedling is that it is theoretically optimal--theoretically it can schedule processes so that each process meets its deadline requirements and CPU utilization is at 100 percent. In practice, however,  it is impossible to achieve this level of CPU utilization due to the cost of context switching between processes and interruopt handling.
 
-<a href="https://github.com/Francesco601/BEST-Operating-System-Resources"> Resources LOL! </a>
+<a href="https://github.com/Francesco601/BEST-Operating-System-Resources"> Resources  </a>
 
 
 
