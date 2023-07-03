@@ -13,7 +13,7 @@ Before discussing the algorithms,  we must define certain characteristics  of th
 The rate-monotonic scheduling algorithm schedules period tasks using a static priority-driven policy with preemption. If a lower-priority process is running and a higher-priority process becomes available to run, it will preempt the lower-priority process. Upon entering the system, each periodic task is assigned an priority inversely proportional to its period. The shorter the period, the higher the priority and viceversa. A set of processes can be scheduled only if they meet the following equation:
 
 ```math
-\sum_{k=1}^n C_i/T_i \leq n(2^1/n - 1)
+\sum_{k=1}^n C_i/T_i \leq n(2^{1/n} - 1)
 ```
 where n is the number of processes in the process set, $C_i $ is the computation time of the process, $T_i$ is the time period for the process to run and U is the processor utilization. Let's consider a simplified example first without rate-monotonic scheduling.  We have two processes, P1 and P2. The periods for P1 and P2 are 50 and 100 respectively. The processing times are T1 = 20 for P1 and T2 = 35 for P2. The deadline for each process requires that it complete its CPU burst by the start of its next period.
 
